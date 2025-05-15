@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+lightgbm
+mlflow
+dagshub
+dvc
+optuna
+plotly
+joblib
