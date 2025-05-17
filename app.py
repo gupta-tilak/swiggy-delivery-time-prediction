@@ -52,9 +52,12 @@ def load_model_information(file_path):
 def load_model(model_path):
     model = joblib.load(model_path)
     return model
+    
+def load_transformer(transformer_path):
+    transformer = joblib.load(transformer_path)
+    return transformer
 
 # columns to preprocess in data
-
 num_cols = ["age",
             "ratings",
             "pickup_time_minutes",
@@ -90,7 +93,7 @@ model = mlflow.sklearn.load_model(model_path)
 
 # load the preprocessor
 preprocessor_path = "models/preprocessor.joblib"
-preprocessor = load_model(preprocessor_path)
+preprocessor = load_transformer(preprocessor_path)
 
 # build the model pipeline
 model_pipe = Pipeline(steps=[
