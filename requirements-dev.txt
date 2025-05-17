@@ -10,3 +10,5 @@ dvc
 optuna
 plotly
 joblib
+pytest
+requests
