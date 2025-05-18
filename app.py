@@ -13,7 +13,6 @@ from scripts.data_clean_utils import perform_data_cleaning
 # set the output as pandas
 set_config(transform_output='pandas')
 
-# initialize dagshub
 import dagshub
 import mlflow.client
 
