@@ -12,3 +12,4 @@ plotly
 joblib
 pytest
 requests
+dvc_s3
