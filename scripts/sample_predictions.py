@@ -14,7 +14,7 @@ sample_row = pd.read_csv(data_path).dropna().sample(1)
 print("The target value is", sample_row.iloc[:,-1].values.item().replace("(min) ",""))
     
 # remove the target column
-data = sample_row.drop(columns=[sample_row.columns.tolist()[-1]]).dropna().squeeze().to_dict()
+data = sample_row.drop(columns=[sample_row.columns.tolist()[-1]]).squeeze().to_dict()
 
 # get the response from API
 response = requests.post(url=predict_url,json=data)
